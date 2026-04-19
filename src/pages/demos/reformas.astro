@@ -2,85 +2,168 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Demo: Reformas Premium | Tane Solutions" description="Ejemplo de Landing Page para Empresas de Reformas y Construcción.">
+<Layout title="Demo: Reformas Premium e Interiorismo | Tane Solutions" description="Ejemplo de Landing Page para Empresas de Reformas y Construcción.">
   
   <!-- Navigation / Back to Main -->
   <div class="fixed top-0 inset-x-0 z-50 p-4 flex justify-between items-center pointer-events-none">
-    <a href="/" class="pointer-events-auto inline-flex items-center gap-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors shadow-lg">
+    <a href="/" class="pointer-events-auto inline-flex items-center gap-2 bg-white/90 backdrop-blur-md border border-stone-200 text-stone-900 px-5 py-2 rounded-full text-sm font-medium hover:bg-stone-100 transition-colors shadow-lg">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
       Volver a Tane
     </a>
-    <div class="pointer-events-auto px-3 py-1 bg-orange-500/10 border border-orange-500/20 text-orange-400 rounded-full text-xs font-bold tracking-widest uppercase">
-      Entorno Demo
+    <div class="pointer-events-auto px-4 py-1.5 bg-orange-600 text-white shadow-lg shadow-orange-600/20 rounded-full text-xs font-bold tracking-widest uppercase">
+      Entorno Demo Reformas
     </div>
   </div>
 
-  <!-- Hero Section -->
-  <main class="min-h-screen bg-slate-950 text-slate-200">
-    <!-- Industrial Themed Background Pattern/Gradients -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute inset-0 bg-[#0f1115]"></div> <!-- Darker base -->
-      <div class="absolute -top-[10%] left-[20%] w-[60%] h-[40%] bg-orange-600/10 blur-[150px] rounded-full mix-blend-screen"></div>
-      
-      <!-- Subtle Grid -->
-      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-30"></div>
-    </div>
-
-    <!-- Content -->
-    <section class="relative pt-32 pb-20 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center lg:text-left lg:flex-row gap-12 min-h-[90vh]">
-      
-      <!-- Text Area -->
-      <div class="flex-1 relative z-10 lg:pr-10">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-sm bg-orange-500 text-slate-950 font-bold uppercase tracking-wide text-xs mb-8">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-          Reformas Integrales
-        </div>
-        
-        <h1 class="text-5xl lg:text-7xl font-black uppercase tracking-tighter text-white mb-6 leading-[1.05]">
-          Construimos <br/>
-          <span class="text-transparent bg-clip-text bg-linear-to-r from-orange-400 to-orange-600">tú futuro.</span>
-        </h1>
-        
-        <p class="text-lg text-slate-400 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-          Especialistas en transformar espacios con materiales premium y acabados impecables. Cumplimos plazos. Sin sorpresas en el presupuesto.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <button class="bg-orange-500 hover:bg-orange-600 text-slate-950 font-black uppercase tracking-wide px-8 py-4 rounded-sm transition-all flex items-center justify-center gap-2">
-            Solicitar Presupuesto
-          </button>
-          <button class="bg-transparent hover:bg-slate-800 text-white border-2 border-slate-700 font-bold uppercase tracking-wide px-8 py-4 rounded-sm transition-all flex items-center justify-center">
-            Ver Proyectos
-          </button>
-        </div>
-        
-        <div class="mt-8 flex items-center justify-center lg:justify-start gap-4">
-            <div class="flex -space-x-2">
-              <img class="w-10 h-10 rounded-full border-2 border-slate-900" src="https://i.pravatar.cc/100?img=11" alt="Worker">
-              <img class="w-10 h-10 rounded-full border-2 border-slate-900" src="https://i.pravatar.cc/100?img=12" alt="Worker">
-              <img class="w-10 h-10 rounded-full border-2 border-slate-900" src="https://i.pravatar.cc/100?img=15" alt="Worker">
-            </div>
-            <p class="text-sm text-slate-500 font-medium">+50 profesionales en plantilla</p>
-        </div>
-      </div>
-
-      <!-- Image Area -->
-      <div class="flex-1 w-full relative z-10 mt-10 lg:mt-0">
-        <div class="relative bg-slate-800 rounded-sm overflow-hidden min-h-[500px] border-l-4 border-orange-500 shadow-2xl">
-          <!-- Placeholder Image -->
-          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop" alt="Construcción Premium" class="absolute inset-0 w-full h-full object-cover opacity-70" />
-          
-          <div class="absolute inset-0 bg-linear-to-t from-slate-950 via-transparent to-transparent"></div>
-          
-          <!-- Callout overlay -->
-           <div class="absolute bottom-0 inset-x-0 p-8 sm:p-12">
-              <div class="bg-orange-500 text-slate-950 inline-block px-4 py-2 font-black text-3xl mb-4 transform -skew-x-12">
-                  <span class="block transform skew-x-12">15 AÑOS</span>
+  <main class="bg-stone-50 text-stone-900 font-sans selection:bg-orange-600 selection:text-white">
+    <!-- Hero Split Layout -->
+    <header class="relative min-h-screen flex flex-col lg:flex-row">
+      <!-- Left Content -->
+      <div class="w-full lg:w-1/2 flex items-center justify-center p-8 lg:p-20 pt-24 lg:pt-20 bg-stone-100 relative z-10">
+        <div class="max-w-xl">
+           <div class="inline-flex items-center gap-2 mb-6">
+              <span class="w-8 h-0.5 bg-orange-600"></span>
+              <span class="text-orange-600 uppercase tracking-widest text-sm font-bold">Estudio de Arquitectura e Interiorismo</span>
+           </div>
+           
+           <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-stone-900 mb-6 leading-[1.1]">
+             Construimos el espacio que imaginas.<br/>
+             <span class="text-stone-400 font-light">Sin sorpresas.</span>
+           </h1>
+           
+           <p class="text-lg text-stone-600 mb-10 leading-relaxed font-light">
+             Especialistas en reformas integrales de alto standing. Desde el primer boceto hasta la entrega de llaves. Cumplimos plazos y presupuesto, garantizado por contrato.
+           </p>
+           
+           <div class="flex flex-col sm:flex-row gap-4">
+             <button class="bg-stone-900 hover:bg-stone-800 text-white font-medium px-8 py-4 transition-colors text-sm uppercase tracking-wider">
+               Presupuesto sin compromiso
+             </button>
+             <button class="bg-transparent border border-stone-300 hover:border-stone-400 text-stone-900 font-medium px-8 py-4 transition-colors text-sm uppercase tracking-wider">
+               Ver Proyectos
+             </button>
+           </div>
+           
+           <!-- Trust indicators -->
+           <div class="mt-16 flex items-center gap-8 border-t border-stone-200 pt-8">
+              <div>
+                 <p class="font-bold text-2xl text-stone-900">4.9/5</p>
+                 <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Reseñas en Google</p>
               </div>
-              <p class="text-white font-bold text-xl uppercase tracking-wider">de experiencia en el sector</p>
+              <div class="w-px h-12 bg-stone-200"></div>
+              <div>
+                 <p class="font-bold text-2xl text-stone-900">10 Años</p>
+                 <p class="text-xs text-stone-500 uppercase tracking-widest mt-1">Garantía de Obra</p>
+              </div>
            </div>
         </div>
       </div>
+      
+      <!-- Right Image -->
+      <div class="w-full lg:w-1/2 h-[50vh] lg:h-screen relative">
+         <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop" alt="Reforma moderna" class="w-full h-full object-cover" />
+         <!-- Overlay tag -->
+         <div class="absolute bottom-8 right-8 bg-white p-4 shadow-xl">
+            <p class="text-xs text-stone-500 uppercase tracking-widest font-bold mb-1">Proyecto Reciente</p>
+            <p class="text-stone-900 font-medium">Villa en Mirasierra, Madrid</p>
+         </div>
+      </div>
+    </header>
+
+    <!-- Services Grid Layout -->
+    <section class="py-24 bg-white relative z-20">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          
+          <div class="text-center max-w-2xl mx-auto mb-16">
+             <h2 class="text-3xl lg:text-5xl font-bold text-stone-900 mb-6">Nuestra Especialidad</h2>
+             <p class="text-stone-600 text-lg">Dominamos todas las fases del proyecto. Un solo interlocutor, un equipo altamente cualificado y materiales de primera calidad.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+             <!-- Service 1 -->
+             <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-6 h-64">
+                   <img src="https://images.unsplash.com/photo-1541813645758-29ecfec6e79b?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" alt="Reformas Integrales" />
+                </div>
+                <h3 class="text-2xl font-bold text-stone-900 mb-3 border-b border-stone-200 pb-3 group-hover:border-orange-600 transition-colors">Reformas Integrales</h3>
+                <p class="text-stone-600">Transformamos tu vivienda por completo. Redistribución de espacios, actualización de instalaciones y acabados premium.</p>
+             </div>
+             
+             <!-- Service 2 -->
+             <div class="group cursor-pointer lg:mt-12">
+                <div class="overflow-hidden mb-6 h-64">
+                   <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" alt="Cocinas y Baños" />
+                </div>
+                <h3 class="text-2xl font-bold text-stone-900 mb-3 border-b border-stone-200 pb-3 group-hover:border-orange-600 transition-colors">Cocinas y Baños</h3>
+                <p class="text-stone-600">Diseñamos espacios funcionales y estéticos. Trabajamos con marcas líderes como Porcelanosa, Silestone y Roca.</p>
+             </div>
+
+             <!-- Service 3 -->
+             <div class="group cursor-pointer">
+                <div class="overflow-hidden mb-6 h-64">
+                   <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" alt="Interiorismo" />
+                </div>
+                <h3 class="text-2xl font-bold text-stone-900 mb-3 border-b border-stone-200 pb-3 group-hover:border-orange-600 transition-colors">Interiorismo 3D</h3>
+                <p class="text-stone-600">Pasea por tu nueva casa antes de empezar la obra. Renders fotorrealistas para que tomes las mejores decisiones.</p>
+             </div>
+          </div>
+       </div>
+    </section>
+
+    <!-- Method / Process Full Width -->
+    <section class="bg-stone-900 text-white py-24">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="lg:flex justify-between items-end mb-16 border-b border-stone-800 pb-8">
+             <h2 class="text-4xl lg:text-5xl font-bold max-w-lg mb-6 lg:mb-0">El método. Nuestra promesa firme.</h2>
+             <p class="text-stone-400 max-w-sm">No somos chapuzas. Profesionalizamos la construcción para tu tranquilidad.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+             <div class="relative">
+                <p class="text-6xl font-black text-stone-800 absolute -top-8 -left-4 z-0 pointer-events-none">01</p>
+                <div class="relative z-10">
+                   <h4 class="text-xl font-bold mb-3">Visita Técnica</h4>
+                   <p class="text-stone-400 text-sm">Nuestro arquitecto visita tu espacio para tomar medidas y evaluar la viabilidad estructural.</p>
+                </div>
+             </div>
+             <div class="relative mt-8 md:mt-0">
+                <p class="text-6xl font-black text-stone-800 absolute -top-8 -left-4 z-0 pointer-events-none">02</p>
+                <div class="relative z-10">
+                   <h4 class="text-xl font-bold mb-3">Proyecto y 3D</h4>
+                   <p class="text-stone-400 text-sm">Presentamos planos, distribución, infografías y presupuesto cerrado al céntimo. Sin letra pequeña.</p>
+                </div>
+             </div>
+             <div class="relative mt-8 md:mt-0">
+                <p class="text-6xl font-black text-stone-800 absolute -top-8 -left-4 z-0 pointer-events-none">03</p>
+                <div class="relative z-10">
+                   <h4 class="text-xl font-bold mb-3">Ejecución Total</h4>
+                   <p class="text-stone-400 text-sm">Nos encargamos de licencias, permisos y dirección de obra. Tienes acceso a un portal web para ver avances.</p>
+                </div>
+             </div>
+             <div class="relative mt-8 md:mt-0">
+                <p class="text-6xl font-black text-stone-800 absolute -top-8 -left-4 z-0 pointer-events-none">04</p>
+                <div class="relative z-10">
+                   <h4 class="text-xl font-bold mb-3">Entrega y Garantía</h4>
+                   <p class="text-stone-400 text-sm">Limpieza final profesional. Entrega de llaves y certificado de 10 años de garantía estructural.</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 bg-orange-600 relative overflow-hidden">
+       <!-- Decorative background element -->
+       <div class="absolute -right-20 -top-20 w-96 h-96 bg-orange-500 rounded-full blur-3xl opacity-50"></div>
+       <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-orange-700 rounded-full blur-3xl opacity-50"></div>
+
+       <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+          <h2 class="text-4xl lg:text-6xl font-bold text-white mb-6">Tu nueva vida empieza con una buena decisión.</h2>
+          <p class="text-white/80 text-xl mb-10 max-w-2xl mx-auto font-light">Cuéntanos qué tienes en mente. Realizamos una valoración inicial gratuita y sin compromiso en menos de 48 horas.</p>
+          <button class="bg-white hover:bg-stone-100 text-stone-900 font-bold px-10 py-5 text-lg uppercase tracking-widest shadow-2xl transition-transform hover:-translate-y-1">
+             Solicitar Presupuesto
+          </button>
+       </div>
     </section>
   </main>
 </Layout>

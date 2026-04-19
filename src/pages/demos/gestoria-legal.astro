@@ -6,85 +6,129 @@ import Layout from '../../layouts/Layout.astro';
   
   <!-- Navigation / Back to Main -->
   <div class="fixed top-0 inset-x-0 z-50 p-4 flex justify-between items-center pointer-events-none">
-    <a href="/" class="pointer-events-auto inline-flex items-center gap-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors shadow-lg">
+    <a href="/" class="pointer-events-auto inline-flex items-center gap-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors shadow-lg">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
       Volver a Tane
     </a>
-    <div class="pointer-events-auto px-3 py-1 bg-amber-500/10 border border-amber-500/20 text-amber-400 rounded-full text-xs font-bold tracking-widest uppercase">
-      Entorno Demo
+    <div class="pointer-events-auto px-4 py-1.5 bg-amber-500 text-slate-900 shadow-lg shadow-amber-500/20 rounded-full text-xs font-bold tracking-widest uppercase">
+      Entorno Demo Legal
     </div>
   </div>
 
-  <!-- Hero Section -->
-  <main class="min-h-screen bg-slate-950 text-slate-200">
-    <!-- Legal Themed Background Gradient -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute top-[10%] -left-[5%] w-[40%] h-[50%] bg-amber-600/5 blur-[120px] rounded-full"></div>
-      <div class="absolute bottom-[20%] -right-[10%] w-[50%] h-[40%] bg-amber-500/5 blur-[150px] rounded-full"></div>
-    </div>
+  <main class="bg-zinc-950 text-slate-200 font-serif selection:bg-amber-500 selection:text-white">
+    <!-- Centered Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden pt-20">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2500&auto=format&fit=crop" class="w-full h-full object-cover object-top opacity-30 grayscale" alt="Abogados" />
+        <div class="absolute inset-0 bg-linear-to-b from-zinc-950 via-zinc-950/80 to-zinc-950"></div>
+      </div>
 
-    <!-- Content -->
-    <section class="relative pt-32 pb-20 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center gap-12 min-h-[90vh]">
-      
-      <!-- Text Area -->
-      <div class="flex-1 relative z-10">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-500 text-sm font-medium mb-6">
-          <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-          Asesoría Jurídica y Fiscal
+      <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+        <div class="w-16 h-16 border border-amber-500 flex items-center justify-center rounded-full mb-8">
+           <svg class="text-amber-500" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         
-        <h1 class="text-5xl lg:text-7xl font-serif tracking-tight text-white mb-6 leading-[1.1]">
-          Tranquilidad legal para tu <br />
-          <span class="text-transparent bg-clip-text bg-linear-to-r from-amber-200 to-amber-500">patrimonio y negocio.</span>
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight text-white mb-8 leading-[1.05]">
+          Defensa firme.<br/> 
+          <span class="italic text-amber-500 font-light">Estrategia impecable.</span>
         </h1>
         
-        <p class="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed">
-          Un equipo de abogados colegiados listos para defender tus intereses con absoluta discreción y eficacia garantizada. Déjanos los problemas a nosotros.
+        <p class="text-lg md:text-2xl text-slate-400 font-sans mb-12 max-w-2xl font-light">
+          Un despacho boutique de abogados especializados en derecho penal y mercantil. Asumimos casos complejos que otros rechazan.
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4">
-          <button class="bg-amber-600 hover:bg-amber-500 text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-lg shadow-amber-600/20 flex items-center justify-center gap-2">
-            Consulta Gratuita
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </button>
-          <button class="bg-slate-900 border border-slate-700 hover:border-amber-500/50 text-white font-medium px-8 py-4 rounded-xl transition-all flex items-center justify-center">
-            Nuestros Casos
+        <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
+          <button class="bg-amber-600 hover:bg-amber-500 text-white font-sans font-medium px-10 py-5 rounded-none transition-colors border border-amber-500 w-full sm:w-auto tracking-wide uppercase text-sm">
+            Estudiamos tu caso
           </button>
         </div>
-
-        <!-- Metric Badges -->
-        <div class="mt-12 grid grid-cols-2 gap-6 text-sm text-slate-500 border-t border-slate-800 pt-8 max-w-md">
-          <div>
-            <p class="text-3xl font-serif text-white mb-1">98%</p>
-            <p>Casos Ganados en 2023</p>
-          </div>
-          <div>
-            <p class="text-3xl font-serif text-white mb-1">+15</p>
-            <p>Años de Experiencia</p>
-          </div>
-        </div>
       </div>
-
-      <!-- Image Area -->
-      <div class="flex-1 w-full max-w-lg lg:max-w-none relative z-10">
-        <div class="relative rounded-4xl overflow-hidden aspect-3/4 sm:aspect-square bg-slate-900 border border-slate-800 shadow-2xl">
-          <!-- Placeholder Image -->
-          <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2000&auto=format&fit=crop" alt="Despacho de Abogados" class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-overlay grayscale hover:grayscale-0 transition-all duration-700" />
-          
-          <div class="absolute inset-0 bg-linear-to-tr from-slate-950 via-slate-900/60 to-transparent"></div>
-          
-          <!-- Floating UI Element -->
-          <div class="absolute top-8 left-8 bg-slate-900/90 backdrop-blur-md border border-slate-700 p-5 rounded-2xl flex items-start gap-4 max-w-[280px]">
-            <div class="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center shrink-0">
-              <span class="text-amber-500 font-serif font-bold italic">L</span>
-            </div>
-            <div>
-              <p class="text-slate-300 text-sm leading-relaxed">"Su intervención fue clave para resolver la herencia sin pleitos de años."</p>
-              <div class="mt-2 flex text-amber-500">★ ★ ★ ★ ★</div>
-            </div>
-          </div>
-        </div>
+      
+      <!-- Scroll Indicator -->
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-pulse hidden md:flex flex-col items-center gap-2 text-amber-500/50">
+         <span class="text-xs uppercase tracking-widest font-sans">Descubre más</span>
+         <div class="w-px h-12 bg-linear-to-b from-amber-500/50 to-transparent"></div>
       </div>
+    </header>
+
+    <!-- Practice Areas / Features Split -->
+    <section class="py-32 relative bg-zinc-950">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row gap-20">
+         
+         <!-- Left sticky text -->
+         <div class="lg:w-1/3 relative">
+            <div class="sticky top-32">
+               <h2 class="text-3xl lg:text-5xl text-white mb-6">Aéreas de <br/>Práctica Legal</h2>
+               <p class="font-sans text-slate-400 mb-8 leading-relaxed">No abarcamos todo. Solo hacemos lo que sabemos que ganamos. Nuestra hiper-especialización es tu mayor garantía procesal y fiscal.</p>
+               <a href="#" class="inline-flex items-center gap-3 text-amber-500 font-sans tracking-widest uppercase text-sm font-bold group">
+                 Ver todo nuestro alcance
+                 <span class="w-8 h-px bg-amber-500 group-hover:w-12 transition-all"></span>
+               </a>
+            </div>
+         </div>
+
+         <!-- Right accordion / list -->
+         <div class="lg:w-2/3 space-y-8 font-sans">
+            <!-- Box 1 -->
+            <div class="border border-zinc-800 p-8 hover:bg-zinc-900 transition-colors group cursor-pointer">
+               <div class="flex justify-between items-start mb-4">
+                 <h3 class="text-2xl text-white font-serif group-hover:text-amber-500 transition-colors">01. Derecho Mercantil</h3>
+                 <svg class="text-zinc-600 group-hover:text-amber-500 transition-colors transform group-hover:-rotate-45" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+               </div>
+               <p class="text-slate-400">Protegemos corporaciones ante litigios, fusiones, y regulaciones complejas. Actuamos como un departamento legal externo integral.</p>
+            </div>
+            
+            <!-- Box 2 -->
+            <div class="border border-zinc-800 p-8 hover:bg-zinc-900 transition-colors group cursor-pointer">
+               <div class="flex justify-between items-start mb-4">
+                 <h3 class="text-2xl text-white font-serif group-hover:text-amber-500 transition-colors">02. Defensa Penal</h3>
+                 <svg class="text-zinc-600 group-hover:text-amber-500 transition-colors transform group-hover:-rotate-45" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+               </div>
+               <p class="text-slate-400">Asistencia integral en tribunales, delitos económicos y defensa patrimonial desde el primer minuto de la investigación.</p>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="border border-zinc-800 p-8 hover:bg-zinc-900 transition-colors group cursor-pointer">
+               <div class="flex justify-between items-start mb-4">
+                 <h3 class="text-2xl text-white font-serif group-hover:text-amber-500 transition-colors">03. Gestión Fiscal</h3>
+                 <svg class="text-zinc-600 group-hover:text-amber-500 transition-colors transform group-hover:-rotate-45" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+               </div>
+               <p class="text-slate-400">Inspecciones de hacienda, optimización de tributos para holdings e impuestos de grandes patrimonios de forma legal y segura.</p>
+            </div>
+         </div>
+       </div>
+    </section>
+
+    <!-- Stat Block -->
+    <section class="py-20 border-y border-zinc-800">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-12 font-sans text-center">
+          <div>
+            <p class="text-4xl text-amber-500 font-serif mb-2">98%</p>
+            <p class="text-sm text-slate-500 uppercase tracking-widest">Casos resueltos</p>
+          </div>
+          <div>
+            <p class="text-4xl text-amber-500 font-serif mb-2">+15</p>
+            <p class="text-sm text-slate-500 uppercase tracking-widest">Años Experiencia</p>
+          </div>
+          <div>
+            <p class="text-4xl text-amber-500 font-serif mb-2">24h</p>
+            <p class="text-sm text-slate-500 uppercase tracking-widest">Respuesta Urgente</p>
+          </div>
+          <div>
+            <p class="text-4xl text-amber-500 font-serif mb-2">12</p>
+            <p class="text-sm text-slate-500 uppercase tracking-widest">Abogados Sénior</p>
+          </div>
+       </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="py-32 bg-zinc-900 text-center px-4">
+       <h2 class="text-4xl lg:text-5xl text-white mb-6">El tiempo juega en tu contra. <br/><span class="italic text-slate-500 font-light">Asesórate hoy.</span></h2>
+       <p class="font-sans text-slate-400 max-w-xl mx-auto mb-10">La primera valoración del caso es completamente confidencial y sin compromiso. Contacta con nosotros.</p>
+       <button class="bg-white hover:bg-slate-200 text-zinc-950 font-sans font-bold px-10 py-5 uppercase tracking-widest text-sm transition-colors">
+          Solicitar Consulta Confidencial
+       </button>
     </section>
   </main>
 </Layout>
