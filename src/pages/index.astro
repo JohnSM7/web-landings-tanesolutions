@@ -212,19 +212,17 @@ import Layout from '../layouts/Layout.astro';
           <!-- Demo 1 -->
           <a href="/demos/clinica-dental" class="group cursor-pointer block">
             <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50">
-              <div class="absolute inset-0 bg-slate-700 m-2 rounded-xl flex flex-col overflow-hidden transition-transform duration-500 group-hover:scale-105">
-                <div class="h-4 bg-slate-800 w-full flex items-center px-2">
-                   <div class="flex gap-1"><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div></div>
-                </div>
-                <div class="p-4 bg-linear-to-b from-blue-900/50 to-slate-800 flex-1 relative">
-                   <div class="w-1/2 h-4 bg-blue-400/20 rounded mb-2"></div>
-                   <div class="w-3/4 h-6 bg-white/10 rounded mb-6"></div>
-                   <div class="w-20 h-6 bg-blue-500/80 rounded-full"></div>
-                   <!-- Overlay Hover CTA -->
-                   <div class="absolute inset-0 bg-slate-900/80 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity flex">
-                     <span class="bg-lime-400 text-slate-900 font-bold px-4 py-2 rounded-full text-sm flex items-center gap-2">Ver Demo Real <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span>
-                   </div>
-                </div>
+              <img 
+                src="/images/dental_cover.png" 
+                alt="Demo Clínica Dental" 
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <!-- Overlay Hover CTA -->
+              <div class="absolute inset-0 bg-slate-950/40 items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 flex backdrop-blur-[2px]">
+                <span class="bg-lime-400 text-slate-900 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2 shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                  Ver Demo Real 
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                </span>
               </div>
             </div>
             <h3 class="text-lg font-bold group-hover:text-lime-400 transition-colors">Clínica Dental / Salud</h3>
@@ -234,19 +232,17 @@ import Layout from '../layouts/Layout.astro';
           <!-- Demo 2 -->
           <a href="/demos/gestoria-legal" class="group cursor-pointer block">
             <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50">
-              <div class="absolute inset-0 bg-slate-700 m-2 rounded-xl flex flex-col overflow-hidden transition-transform duration-500 group-hover:scale-105">
-                <div class="h-4 bg-slate-800 w-full flex items-center px-2">
-                   <div class="flex gap-1"><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div></div>
-                </div>
-                <div class="p-4 bg-linear-to-b from-stone-800 to-slate-800 flex-1 flex flex-col items-center text-center relative">
-                   <div class="w-12 h-12 rounded-full bg-stone-600/50 mb-3"></div>
-                   <div class="w-3/4 h-5 bg-white/10 rounded mb-2"></div>
-                   <div class="w-1/2 h-3 bg-white/5 rounded"></div>
-                   <!-- Overlay Hover CTA -->
-                   <div class="absolute inset-0 bg-slate-900/80 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity flex">
-                     <span class="bg-lime-400 text-slate-900 font-bold px-4 py-2 rounded-full text-sm flex items-center gap-2">Ver Demo Real <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span>
-                   </div>
-                </div>
+              <img 
+                src="/images/legal_cover.png" 
+                alt="Demo Gestoría Legal" 
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <!-- Overlay Hover CTA -->
+              <div class="absolute inset-0 bg-slate-950/40 items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 flex backdrop-blur-[2px]">
+                <span class="bg-lime-400 text-slate-900 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2 shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                  Ver Demo Real 
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                </span>
               </div>
             </div>
             <h3 class="text-lg font-bold group-hover:text-lime-400 transition-colors">Abogados y Gestoría</h3>
@@ -256,21 +252,17 @@ import Layout from '../layouts/Layout.astro';
           <!-- Demo 3 -->
           <a href="/demos/reformas" class="group cursor-pointer block">
             <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50">
-              <div class="absolute inset-0 bg-slate-700 m-2 rounded-xl flex flex-col overflow-hidden transition-transform duration-500 group-hover:scale-105">
-                <div class="h-4 bg-slate-800 w-full flex items-center px-2">
-                   <div class="flex gap-1"><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div></div>
-                </div>
-                <div class="p-4 bg-linear-to-br from-amber-900/40 to-slate-800 flex-1 flex gap-2 relative">
-                   <div class="w-1/2 bg-amber-500/10 rounded-lg"></div>
-                   <div class="w-1/2 flex flex-col gap-2">
-                     <div class="h-10 bg-white/10 rounded-lg"></div>
-                     <div class="flex-1 bg-white/5 rounded-lg"></div>
-                   </div>
-                   <!-- Overlay Hover CTA -->
-                   <div class="absolute inset-0 bg-slate-900/80 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity flex">
-                     <span class="bg-lime-400 text-slate-900 font-bold px-4 py-2 rounded-full text-sm flex items-center gap-2">Ver Demo Real <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span>
-                   </div>
-                </div>
+              <img 
+                src="/images/reformas_cover.png" 
+                alt="Demo Reformas" 
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <!-- Overlay Hover CTA -->
+              <div class="absolute inset-0 bg-slate-950/40 items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 flex backdrop-blur-[2px]">
+                <span class="bg-lime-400 text-slate-900 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2 shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                  Ver Demo Real 
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+                </span>
               </div>
             </div>
             <h3 class="text-lg font-bold group-hover:text-lime-400 transition-colors">Reformas Externas</h3>
