@@ -1,57 +1,122 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 // Aca importaremos los componentes después
 ---
-<Layout title="Tane Solution | Diseño Web para PYMES" description="Diseñamos páginas a medida, sin plantillas, y nos ocupamos de toda la parte técnica para que tú solo te enfoques en atender a tus nuevos clientes.">
+
+<Layout
+  title="Tane Solution | Diseño Web para PYMES"
+  description="Diseñamos páginas a medida, sin plantillas, y nos ocupamos de toda la parte técnica para que tú solo te enfoques en atender a tus nuevos clientes."
+>
   <main>
     <!-- Hero Section -->
-    <section class="relative pt-12 pb-16 lg:pt-24 lg:pb-32 overflow-hidden min-h-[85vh] flex items-center">
+    <section
+      class="relative pt-12 pb-16 lg:pt-24 lg:pb-32 overflow-hidden min-h-[85vh] flex items-center"
+    >
       <!-- Background Image with Overlay -->
       <div class="absolute inset-0 -z-10">
-        <img 
-          src="/images/tane_hero_branded.png" 
-          alt="Tane Solutions Corporate Background" 
+        <img
+          src="/images/tane_hero_branded.png"
+          alt="Tane Solutions Corporate Background"
           class="w-full h-full object-cover opacity-60"
         />
-        <div class="absolute inset-0 bg-linear-to-b from-slate-900/40 via-slate-900/80 to-slate-950"></div>
+        <div
+          class="absolute inset-0 bg-linear-to-b from-slate-900/40 via-slate-900/80 to-slate-950"
+        >
+        </div>
       </div>
-      
-      <div class="container mx-auto px-6 lg:px-8 text-center max-w-6xl relative z-10">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700 backdrop-blur-sm text-sm text-lime-400 font-medium mb-8">
-          <span class="flex h-2 w-2 rounded-full bg-lime-400"></span>
+
+      <div
+        class="container mx-auto px-6 lg:px-8 text-center max-w-6xl relative z-10"
+      >
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700 backdrop-blur-sm text-sm text-brand font-medium mb-8"
+        >
+          <span class="flex h-2 w-2 rounded-full bg-brand"></span>
           Agencia nº1 en Diseño Web para Negocios Reales
         </div>
-        
-        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight mb-8">
-          Consigue la página web que tu negocio necesita: <span class="text-transparent bg-clip-text bg-linear-to-r from-lime-400 to-emerald-400">Rápida, Profesional y Diseñada para Atraer Clientes.</span>
+
+        <h1
+          class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight mb-8"
+        >
+          Consigue la página web <br />que tu negocio necesita:<br />
+          <span
+            class="text-transparent bg-clip-text bg-linear-to-r from-brand to-brand/80"
+            >Rápida, Profesional y Diseñada para Atraer Clientes.</span
+          >
         </h1>
-        
-        <p class="text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Tu negocio local no debería ser un secreto. Olvídate de plantillas baratas y procesos técnicos interminables. Diseñamos tu web a medida en tiempo récord.
+
+        <p
+          class="text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed"
+        >
+          Tu negocio local no debería ser un secreto.<br /> Olvídate de plantillas
+          baratas y procesos técnicos interminables.<br /> Diseñamos tu web a medida
+          en tiempo récord.
         </p>
-        
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#precios" class="w-full sm:w-auto px-8 py-4 bg-lime-400 hover:bg-lime-500 text-slate-900 font-bold rounded-xl transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_-10px_rgba(163,230,53,0.3)]">
+
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <a
+            href="#precios"
+            class="w-full sm:w-auto px-8 py-4 bg-brand hover:bg-brand/90 text-slate-900 font-bold rounded-xl transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_-10px_rgba(217,255,0,0.3)]"
+          >
             👉 Quiero mi web profesional
           </a>
-          <a href="#demos" class="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold rounded-xl transition-all">
+          <a
+            href="#demos"
+            class="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold rounded-xl transition-all"
+          >
             Ver ejemplos
           </a>
         </div>
-        
-        <div class="mt-12 flex items-center justify-center gap-2 text-sm text-slate-400">
+
+        <div
+          class="mt-12 flex items-center justify-center gap-2 text-sm text-slate-400"
+        >
           <div class="flex -space-x-2">
             <!-- Simulated avatars -->
-            <div class="w-8 h-8 rounded-full bg-slate-700 border-2 border-slate-900 flex items-center justify-center text-xs">J</div>
-            <div class="w-8 h-8 rounded-full bg-slate-600 border-2 border-slate-900 flex items-center justify-center text-xs">M</div>
-            <div class="w-8 h-8 rounded-full bg-slate-500 border-2 border-slate-900 flex items-center justify-center text-xs">S</div>
+            <div
+              class="w-8 h-8 rounded-full bg-slate-700 border-2 border-slate-900 flex items-center justify-center text-xs"
+            >
+              J
+            </div>
+            <div
+              class="w-8 h-8 rounded-full bg-slate-600 border-2 border-slate-900 flex items-center justify-center text-xs"
+            >
+              M
+            </div>
+            <div
+              class="w-8 h-8 rounded-full bg-slate-500 border-2 border-slate-900 flex items-center justify-center text-xs"
+            >
+              S
+            </div>
           </div>
           <div class="flex items-center gap-1 text-yellow-400 ml-2">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+              ><path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+              ></path></svg
+            >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+              ><path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+              ></path></svg
+            >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+              ><path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+              ></path></svg
+            >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+              ><path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+              ></path></svg
+            >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+              ><path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+              ></path></svg
+            >
           </div>
           <span>Proceso rápido y sin dolores de cabeza.</span>
         </div>
@@ -61,137 +126,367 @@ import Layout from '../layouts/Layout.astro';
     <!-- Agitación del Problema -->
     <section class="py-24 bg-slate-900 border-t border-slate-800">
       <div class="container mx-auto px-6 lg:px-8">
-        <h2 class="text-3xl lg:text-4xl font-bold text-center mb-16">¿Te suena familiar alguna de estas historias?</h2>
-        
+        <h2 class="text-3xl lg:text-4xl font-bold text-center mb-16">
+          ¿Te suena familiar alguna de estas historias?
+        </h2>
+
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-slate-800/40 border border-slate-700/50 p-8 rounded-2xl">
-            <div class="w-12 h-12 bg-red-500/10 text-red-400 rounded-xl flex items-center justify-center mb-6">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <div
+            class="bg-slate-800/40 border border-slate-700/50 p-8 rounded-2xl"
+          >
+            <div
+              class="w-12 h-12 bg-brand/20 text-brand/40 rounded-xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path></svg
+              >
             </div>
-            <h3 class="text-xl font-semibold mb-4 text-white">"Mi web actual es de 2010"</h3>
-            <p class="text-slate-400 leading-relaxed">Tus clientes te buscan en Google, ven una web lenta, desactualizada o directamente fea, y se van a la competencia que transmite más confianza.</p>
+            <h3 class="text-xl font-semibold mb-4 text-white">
+              "Mi web actual es de 2010"
+            </h3>
+            <p class="text-slate-400 leading-relaxed">
+              Tus clientes te buscan en Google, ven una web lenta,
+              desactualizada o directamente fea, y se van a la competencia que
+              transmite más confianza.
+            </p>
           </div>
-          
-          <div class="bg-slate-800/40 border border-slate-700/50 p-8 rounded-2xl">
-            <div class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-6">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+
+          <div
+            class="bg-slate-800/40 border border-slate-700/50 p-8 rounded-2xl"
+          >
+            <div
+              class="w-12 h-12 bg-orange-500/10 text-orange-400 rounded-xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                ></path><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg
+              >
             </div>
-            <h3 class="text-xl font-semibold mb-4 text-white">"Intenté hacerla yo mismo..."</h3>
-            <p class="text-slate-400 leading-relaxed">Pasaste horas peleándote con tutoriales de YouTube o Wix para darte cuenta de que no tienes tiempo para eso y el resultado no transmite tu calidad.</p>
+            <h3 class="text-xl font-semibold mb-4 text-white">
+              "Intenté hacerla yo mismo..."
+            </h3>
+            <p class="text-slate-400 leading-relaxed">
+              Pasaste horas peleándote con tutoriales de YouTube o Wix para
+              darte cuenta de que no tienes tiempo para eso y el resultado no
+              transmite tu calidad.
+            </p>
           </div>
-          
-          <div class="bg-slate-800/40 border border-slate-700/50 p-8 rounded-2xl">
-            <div class="w-12 h-12 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+
+          <div
+            class="bg-slate-800/40 border border-slate-700/50 p-8 rounded-2xl"
+          >
+            <div
+              class="w-12 h-12 bg-yellow-500/10 text-yellow-500 rounded-xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg
+              >
             </div>
-            <h3 class="text-xl font-semibold mb-4 text-white">"Agencias que tardan meses"</h3>
-            <p class="text-slate-400 leading-relaxed">Has pedido presupuestos y te hablan con tecnicismos, te piden precios desorbitados y te dan plazos de entrega que parecen un chiste.</p>
+            <h3 class="text-xl font-semibold mb-4 text-white">
+              "Agencias que tardan meses"
+            </h3>
+            <p class="text-slate-400 leading-relaxed">
+              Has pedido presupuestos y te hablan con tecnicismos, te piden
+              precios desorbitados y te dan plazos de entrega que parecen un
+              chiste.
+            </p>
           </div>
         </div>
-        
+
         <p class="text-center text-xl text-slate-300 mt-16 max-w-3xl mx-auto">
-          Tu página web no debería ser un dolor de cabeza ni un pozo de gastos inútil. Debería ser <span class="text-lime-400 font-bold">tu mejor trabajador: disponible 24/7 para convencer a tus clientes.</span>
+          Tu página web no debería ser un dolor de cabeza ni un pozo de gastos
+          inútil. Debería ser <span class="text-brand font-bold"
+            >tu mejor trabajador: disponible 24/7 para convencer a tus clientes.</span
+          >
         </p>
       </div>
     </section>
-<!-- Beneficios -->
+    <!-- Beneficios -->
     <section id="beneficios" class="py-24 bg-slate-800">
       <div class="container mx-auto px-6 lg:px-8">
         <div class="flex flex-col lg:flex-row gap-16 items-center">
           <div class="lg:w-1/2" data-reveal="left">
-            <div class="relative w-full aspect-square md:aspect-video lg:aspect-square bg-slate-800/40 rounded-3xl border border-slate-700/50 overflow-hidden flex items-center justify-center p-8">
+            <div
+              class="relative w-full aspect-square md:aspect-video lg:aspect-square bg-slate-800/40 rounded-3xl border border-slate-700/50 overflow-hidden flex items-center justify-center p-8"
+            >
               <!-- Grid Background -->
-              <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-size-[32px_32px]"></div>
-              
+              <div
+                class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-size-[32px_32px]"
+              >
+              </div>
+
               <!-- Floating UI Elements: Concept Mockup -->
-              <div class="relative w-full max-w-md h-full flex items-center justify-center">
+              <div
+                class="relative w-full max-w-md h-full flex items-center justify-center scale-90 sm:scale-100"
+              >
                 <!-- Main Card: "Performance & Quality" -->
-                <div class="bg-slate-900 rounded-2xl border border-slate-700 shadow-2xl overflow-hidden relative z-10 animate-[float_6s_ease-in-out_infinite] w-64">
-                  <div class="h-8 bg-slate-800/80 border-b border-slate-700 flex items-center px-4 gap-2">
+                <div
+                  class="bg-slate-900 rounded-2xl border border-slate-700 shadow-2xl overflow-hidden relative z-10 animate-[float_6s_ease-in-out_infinite] w-48 sm:w-64"
+                >
+                  <div
+                    class="h-8 bg-slate-800/80 border-b border-slate-700 flex items-center px-4 gap-2"
+                  >
                     <div class="w-2 h-2 rounded-full bg-slate-600"></div>
-                    <div class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">Rendimiento</div>
-                  </div>
-                  <div class="p-6 text-center">
-                    <div class="relative inline-flex items-center justify-center mb-4">
-                      <svg class="w-24 h-24 transform -rotate-90">
-                        <circle cx="48" cy="48" r="40" stroke="currentColor" stroke-width="8" fill="transparent" class="text-slate-800"></circle>
-                        <circle cx="48" cy="48" r="40" stroke="currentColor" stroke-width="8" fill="transparent" stroke-dasharray="251.2" stroke-dashoffset="0" class="text-lime-400"></circle>
-                      </svg>
-                      <span class="absolute text-2xl font-bold text-white">100</span>
+                    <div
+                      class="text-[10px] text-slate-400 uppercase tracking-widest font-bold"
+                    >
+                      Rendimiento
                     </div>
-                    <div class="text-sm font-medium text-slate-300">Optimización Web</div>
+                  </div>
+                  <div class="p-4 sm:p-6 text-center">
+                    <div
+                      class="relative inline-flex items-center justify-center mb-4"
+                    >
+                      <svg
+                        class="w-16 h-16 sm:w-24 sm:h-24 transform -rotate-90"
+                        viewBox="0 0 96 96"
+                      >
+                        <circle
+                          cx="48"
+                          cy="48"
+                          r="40"
+                          stroke="currentColor"
+                          stroke-width="8"
+                          fill="transparent"
+                          class="text-slate-800"></circle>
+                        <circle
+                          cx="48"
+                          cy="48"
+                          r="40"
+                          stroke="currentColor"
+                          stroke-width="8"
+                          fill="transparent"
+                          stroke-dasharray="251.2"
+                          stroke-dashoffset="0"
+                          class="text-brand"></circle>
+                      </svg>
+                      <span
+                        class="absolute text-xl sm:text-2xl font-bold text-white"
+                        >100</span
+                      >
+                    </div>
+                    <div
+                      class="text-[12px] sm:text-sm font-medium text-slate-300"
+                    >
+                      Optimización Web
+                    </div>
                   </div>
                 </div>
 
                 <!-- Floating Card: "Custom Branding" (Top Right) -->
-                <div class="absolute -right-4 -top-4 w-44 bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 shadow-xl z-20 animate-[float_7s_ease-in-out_infinite_1s]">
-                  <div class="text-[10px] text-lime-400 font-bold uppercase tracking-wider mb-2">Ajustes de Diseño</div>
-                  <div class="flex gap-2 mb-3">
-                    <div class="w-6 h-6 rounded-full bg-lime-400 ring-2 ring-white/20"></div>
-                    <div class="w-6 h-6 rounded-full bg-blue-500"></div>
-                    <div class="w-6 h-6 rounded-full bg-purple-500"></div>
+                <div
+                  class="absolute -right-4 -top-8 w-28 sm:-right-4 sm:-top-4 sm:w-44 bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-3 sm:p-4 shadow-xl z-20 animate-[float_7s_ease-in-out_infinite_1s]"
+                >
+                  <div
+                    class="text-[8px] sm:text-[10px] text-brand font-bold uppercase tracking-wider mb-2"
+                  >
+                    Ajustes de Diseño
                   </div>
-                  <div class="space-y-1.5">
-                    <div class="w-full h-1.5 bg-slate-700 rounded"></div>
-                    <div class="w-4/5 h-1.5 bg-slate-700 rounded"></div>
+                  <div class="flex gap-1.5 sm:gap-2 mb-3">
+                    <div
+                      class="w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-brand ring-2 ring-white/20"
+                    >
+                    </div>
+                    <div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-blue-500">
+                    </div>
+                    <div
+                      class="w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-purple-500"
+                    >
+                    </div>
+                  </div>
+                  <div class="space-y-1 sm:space-y-1.5">
+                    <div class="w-full h-1 sm:h-1.5 bg-slate-700 rounded"></div>
+                    <div class="w-4/5 h-1 sm:h-1.5 bg-slate-700 rounded"></div>
                   </div>
                 </div>
 
                 <!-- Floating Card: "Managed Services" (Bottom Left) -->
-                <div class="absolute -left-8 -bottom-4 w-52 bg-slate-950 border border-slate-800 rounded-xl p-4 shadow-xl z-20 animate-[float_5s_ease-in-out_infinite_2s]">
-                  <div class="flex items-center justify-between mb-3">
-                    <div class="text-[10px] text-slate-400 font-bold uppercase">Gestión Técnica</div>
-                    <div class="flex h-2 w-2 rounded-full bg-lime-400 animate-pulse"></div>
+                <div
+                  class="absolute -left-4 -bottom-8 w-36 sm:-left-8 sm:-bottom-4 sm:w-52 bg-slate-950 border border-slate-800 rounded-xl p-3 sm:p-4 shadow-xl z-20 animate-[float_5s_ease-in-out_infinite_2s]"
+                >
+                  <div class="flex items-center justify-between mb-2 sm:mb-3">
+                    <div
+                      class="text-[8px] sm:text-[10px] text-slate-400 font-bold uppercase"
+                    >
+                      Gestión Técnica
+                    </div>
+                    <div
+                      class="flex h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-brand animate-pulse"
+                    >
+                    </div>
                   </div>
-                  <div class="space-y-2.5">
-                    <div class="flex items-center gap-2">
-                      <svg class="w-3.5 h-3.5 text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                      <span class="text-[11px] text-slate-300">Certificado SSL Activo</span>
+                  <div class="space-y-1.5 sm:space-y-2.5">
+                    <div class="flex items-center gap-1.5 sm:gap-2">
+                      <svg
+                        class="w-3 h-3 sm:w-3.5 sm:h-3.5 text-brand"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        ><path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="3"
+                          d="M5 13l4 4L19 7"></path></svg
+                      >
+                      <span class="text-[9px] sm:text-[11px] text-slate-300"
+                        >SSL Activo</span
+                      >
                     </div>
-                    <div class="flex items-center gap-2">
-                      <svg class="w-3.5 h-3.5 text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                      <span class="text-[11px] text-slate-300">Backups Diarios</span>
+                    <div class="flex items-center gap-1.5 sm:gap-2">
+                      <svg
+                        class="w-3 h-3 sm:w-3.5 sm:h-3.5 text-brand"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        ><path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="3"
+                          d="M5 13l4 4L19 7"></path></svg
+                      >
+                      <span class="text-[9px] sm:text-[11px] text-slate-300"
+                        >Backups</span
+                      >
                     </div>
-                    <div class="flex items-center gap-2">
-                      <svg class="w-3.5 h-3.5 text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                      <span class="text-[11px] text-slate-300">Hosting en la Nube</span>
+                    <div class="flex items-center gap-1.5 sm:gap-2">
+                      <svg
+                        class="w-3 h-3 sm:w-3.5 sm:h-3.5 text-brand"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        ><path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="3"
+                          d="M5 13l4 4L19 7"></path></svg
+                      >
+                      <span class="text-[9px] sm:text-[11px] text-slate-300"
+                        >Cloud Hosting</span
+                      >
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div class="lg:w-1/2">
-            <h2 class="text-3xl lg:text-4xl font-bold mb-10">Diseño a medida, resultados reales y cero dolores de cabeza técnicos.</h2>
+            <h2 class="text-3xl lg:text-4xl font-bold mb-10">
+              Diseño a medida, resultados reales y cero dolores de cabeza
+              técnicos.
+            </h2>
             <div class="space-y-8">
               <div class="flex gap-4">
-                <div class="shrink-0 w-12 h-12 rounded-xl bg-lime-400/10 text-lime-400 flex items-center justify-center">
-                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <div
+                  class="shrink-0 w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg
+                  >
                 </div>
                 <div>
-                  <h3 class="text-xl font-bold mb-2">Construcción Ultra Rápida</h3>
-                  <p class="text-slate-400">Lanzamos tu web en tiempo récord. Sin esperas interminables que estancan tu lanzamiento.</p>
-                </div>
-              </div>
-              
-              <div class="flex gap-4">
-                <div class="shrink-0 w-12 h-12 rounded-xl bg-lime-400/10 text-lime-400 flex items-center justify-center">
-                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
-                </div>
-                <div>
-                  <h3 class="text-xl font-bold mb-2">100% Personalizado</h3>
-                  <p class="text-slate-400">Nada de plantillas genéricas. Tu negocio es único y diseñamos tu marca para que destaque por encima de tu competencia local.</p>
+                  <h3 class="text-xl font-bold mb-2">
+                    Construcción Ultra Rápida
+                  </h3>
+                  <p class="text-slate-400">
+                    Lanzamos tu web en tiempo récord. Sin esperas interminables
+                    que estancan tu lanzamiento.
+                  </p>
                 </div>
               </div>
 
               <div class="flex gap-4">
-                <div class="shrink-0 w-12 h-12 rounded-xl bg-lime-400/10 text-lime-400 flex items-center justify-center">
-                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                <div
+                  class="shrink-0 w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                    ></path></svg
+                  >
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2">100% Personalizado</h3>
+                  <p class="text-slate-400">
+                    Nada de plantillas genéricas. Tu negocio es único y
+                    diseñamos tu marca para que destaque por encima de tu
+                    competencia local.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div
+                  class="shrink-0 w-12 h-12 rounded-xl bg-brand/10 text-brand flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                    ></path><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg
+                  >
                 </div>
                 <div>
                   <h3 class="text-xl font-bold mb-2">Gestión Llave en Mano</h3>
-                  <p class="text-slate-400">Dominamos toda la tecnología. Hosting, SEO base, velocidad... nosotros lo dejamos resuelto. Tú solo apruebas el resultado y cobras a tus clientes.</p>
+                  <p class="text-slate-400">
+                    Dominamos toda la tecnología. Hosting, SEO base,
+                    velocidad... nosotros lo dejamos resuelto. Tú solo apruebas
+                    el resultado y cobras a tus clientes.
+                  </p>
                 </div>
               </div>
             </div>
@@ -204,103 +499,198 @@ import Layout from '../layouts/Layout.astro';
     <section id="demos" class="py-24 bg-slate-900">
       <div class="container mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl lg:text-4xl font-bold mb-4">Echa un vistazo a lo que podemos crear para ti</h2>
-          <p class="text-slate-400 max-w-2xl mx-auto">No importa tu sector, adaptamos la estrategia y el diseño a lo que tus clientes reales están buscando.</p>
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+            Echa un vistazo a lo que podemos crear para ti
+          </h2>
+          <p class="text-slate-400 max-w-2xl mx-auto">
+            No importa tu sector, adaptamos la estrategia y el diseño a lo que
+            tus clientes reales están buscando.
+          </p>
         </div>
-        
+
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Demo 1 -->
           <a href="/demos/clinica-dental" class="group cursor-pointer block">
-            <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50">
-              <img 
-                src="/images/dental_cover.png" 
-                alt="Demo Clínica Dental" 
+            <div
+              class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-brand/50"
+            >
+              <img
+                src="/images/dental_cover.png"
+                alt="Demo Clínica Dental"
                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <!-- Overlay Hover CTA -->
-              <div class="absolute inset-0 bg-slate-950/40 items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 flex backdrop-blur-[2px]">
-                <span class="bg-lime-400 text-slate-900 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2 shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                  Ver Demo Real 
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              <div
+                class="absolute inset-0 bg-slate-950/40 items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 flex backdrop-blur-[2px]"
+              >
+                <span
+                  class="bg-brand text-slate-900 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2 shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform"
+                >
+                  Ver Demo Real
+                  <svg
+                    class="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    ><path d="M5 12h14m-7-7 7 7-7 7"></path></svg
+                  >
                 </span>
               </div>
             </div>
-            <h3 class="text-lg font-bold group-hover:text-lime-400 transition-colors">Clínica Dental / Salud</h3>
-            <p class="text-sm text-slate-400">Diseño enfocado en confianza y reservas de citas rápidas.</p>
+            <h3
+              class="text-lg font-bold group-hover:text-brand transition-colors"
+            >
+              Clínica Dental / Salud
+            </h3>
+            <p class="text-sm text-slate-400">
+              Diseño enfocado en confianza y reservas de citas rápidas.
+            </p>
           </a>
-          
+
           <!-- Demo 2 -->
           <a href="/demos/gestoria-legal" class="group cursor-pointer block">
-            <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50">
-              <img 
-                src="/images/legal_cover.png" 
-                alt="Demo Gestoría Legal" 
+            <div
+              class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50"
+            >
+              <img
+                src="/images/legal_cover.png"
+                alt="Demo Gestoría Legal"
                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <!-- Overlay Hover CTA -->
-              <div class="absolute inset-0 bg-slate-950/40 items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 flex backdrop-blur-[2px]">
-                <span class="bg-lime-400 text-slate-900 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2 shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                  Ver Demo Real 
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              <div
+                class="absolute inset-0 bg-slate-950/40 items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 flex backdrop-blur-[2px]"
+              >
+                <span
+                  class="bg-brand text-slate-900 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2 shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform"
+                >
+                  Ver Demo Real
+                  <svg
+                    class="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    ><path d="M5 12h14m-7-7 7 7-7 7"></path></svg
+                  >
                 </span>
               </div>
             </div>
-            <h3 class="text-lg font-bold group-hover:text-lime-400 transition-colors">Abogados y Gestoría</h3>
-            <p class="text-sm text-slate-400">Estructura seria, profesional con captación de Leads.</p>
+            <h3
+              class="text-lg font-bold group-hover:text-brand transition-colors"
+            >
+              Abogados y Gestoría
+            </h3>
+            <p class="text-sm text-slate-400">
+              Estructura seria, profesional con captación de Leads.
+            </p>
           </a>
-          
+
           <!-- Demo 3 -->
           <a href="/demos/reformas" class="group cursor-pointer block">
-            <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50">
-              <img 
-                src="/images/reformas_cover.png" 
-                alt="Demo Reformas" 
+            <div
+              class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50"
+            >
+              <img
+                src="/images/reformas_cover.png"
+                alt="Demo Reformas"
                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <!-- Overlay Hover CTA -->
-              <div class="absolute inset-0 bg-slate-950/40 items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 flex backdrop-blur-[2px]">
-                <span class="bg-lime-400 text-slate-900 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2 shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                  Ver Demo Real 
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              <div
+                class="absolute inset-0 bg-slate-950/40 items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 flex backdrop-blur-[2px]"
+              >
+                <span
+                  class="bg-brand text-slate-900 font-bold px-6 py-3 rounded-full text-sm flex items-center gap-2 shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform"
+                >
+                  Ver Demo Real
+                  <svg
+                    class="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    ><path d="M5 12h14m-7-7 7 7-7 7"></path></svg
+                  >
                 </span>
               </div>
             </div>
-            <h3 class="text-lg font-bold group-hover:text-lime-400 transition-colors">Reformas Externas</h3>
-            <p class="text-sm text-slate-400">Visuales potentes de antes y después con presupuesto ágil.</p>
+            <h3
+              class="text-lg font-bold group-hover:text-brand transition-colors"
+            >
+              Reformas Externas
+            </h3>
+            <p class="text-sm text-slate-400">
+              Visuales potentes de antes y después con presupuesto ágil.
+            </p>
           </a>
         </div>
-        
+
         <div class="mt-12 text-center">
-          <a href="#precios" class="inline-block px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl transition-all">Quiero un resultado así para mi negocio</a>
+          <a
+            href="#precios"
+            class="inline-block px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl transition-all"
+            >Quiero un resultado así para mi negocio</a
+          >
         </div>
       </div>
     </section>
 
     <!-- Proceso -->
-    <section id="proceso" class="py-24 bg-slate-800 border-t border-slate-700/50">
+    <section
+      id="proceso"
+      class="py-24 bg-slate-800 border-t border-slate-700/50"
+    >
       <div class="container mx-auto px-6 lg:px-8">
-        <h2 class="text-3xl lg:text-4xl font-bold text-center mb-16">De la idea a tener tu web vendiendo en solo 3 pasos</h2>
-        
+        <h2 class="text-3xl lg:text-4xl font-bold text-center mb-16">
+          De la idea a tener tu web vendiendo en solo 3 pasos
+        </h2>
+
         <div class="grid md:grid-cols-3 gap-8 relative">
           <!-- Connector line -->
-          <div class="hidden md:block absolute top-[45px] left-[10%] right-[10%] h-0.5 bg-slate-700 z-0"></div>
-          
+          <div
+            class="hidden md:block absolute top-[45px] left-[10%] right-[10%] h-0.5 bg-slate-700 z-0"
+          >
+          </div>
+
           <div class="relative z-10 flex flex-col items-center text-center">
-            <div class="w-24 h-24 rounded-full bg-slate-900 border-4 border-slate-700 flex items-center justify-center text-3xl font-black text-slate-500 mb-6 shadow-xl">1</div>
+            <div
+              class="w-24 h-24 rounded-full bg-slate-900 border-4 border-slate-700 flex items-center justify-center text-3xl font-black text-slate-500 mb-6 shadow-xl"
+            >
+              1
+            </div>
             <h3 class="text-xl font-bold mb-3">Reserva tu llamada</h3>
-            <p class="text-slate-400">Hablamos 15 mins por videollamada o WhatsApp para entender tu negocio y qué necesitas. Cero agobios ni compromisos.</p>
+            <p class="text-slate-400">
+              Hablamos 15 mins por videollamada o WhatsApp para entender tu
+              negocio y qué necesitas. Cero agobios ni compromisos.
+            </p>
           </div>
-          
+
           <div class="relative z-10 flex flex-col items-center text-center">
-            <div class="w-24 h-24 rounded-full bg-slate-900 border-4 border-lime-400 shadow-[0_0_30px_-5px_rgba(163,230,53,0.4)] flex items-center justify-center text-3xl font-black text-lime-400 mb-6">2</div>
+            <div
+              class="w-24 h-24 rounded-full bg-slate-900 border-4 border-brand shadow-[0_0_30px_-5px_rgba(217,255,0,0.4)] flex items-center justify-center text-3xl font-black text-brand mb-6"
+            >
+              2
+            </div>
             <h3 class="text-xl font-bold mb-3">Diseño y Propuesta</h3>
-            <p class="text-slate-400">Nos ponemos manos a la obra. Te presentamos la estructura y el diseño a medida para que sepas cómo se verá todo.</p>
+            <p class="text-slate-400">
+              Nos ponemos manos a la obra. Te presentamos la estructura y el
+              diseño a medida para que sepas cómo se verá todo.
+            </p>
           </div>
-          
+
           <div class="relative z-10 flex flex-col items-center text-center">
-            <div class="w-24 h-24 rounded-full bg-slate-900 border-4 border-slate-700 flex items-center justify-center text-3xl font-black text-slate-500 mb-6 shadow-xl">3</div>
+            <div
+              class="w-24 h-24 rounded-full bg-slate-900 border-4 border-slate-700 flex items-center justify-center text-3xl font-black text-slate-500 mb-6 shadow-xl"
+            >
+              3
+            </div>
             <h3 class="text-xl font-bold mb-3">Lanzamiento</h3>
-            <p class="text-slate-400">Aplicamos tus revisiones, optimizamos la velocidad al extremo y subimos tu web. Lista para recibir a tus clientes.</p>
+            <p class="text-slate-400">
+              Aplicamos tus revisiones, optimizamos la velocidad al extremo y
+              subimos tu web. Lista para recibir a tus clientes.
+            </p>
           </div>
         </div>
       </div>
@@ -308,182 +698,436 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- Pricing -->
     <section id="precios" class="py-24 bg-slate-900 relative">
-      <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_bottom,var(--tw-gradient-stops))] from-lime-900/20 via-slate-900 to-slate-900"></div>
-      
+      <div
+        class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_bottom,var(--tw-gradient-stops))] from-brand/10 via-slate-900 to-slate-900"
+      >
+      </div>
+
       <div class="container mx-auto px-6 lg:px-8">
         <div class="text-center mb-20">
-          <h2 class="text-3xl lg:text-4xl font-bold mb-4">Planes claros que se adaptan a tu negocio</h2>
-          <p class="text-slate-400 max-w-2xl mx-auto">Cero presupuestos opacos. Elige lo que necesitas hoy y escala mañana.</p>
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+            Planes claros que se adaptan a tu negocio
+          </h2>
+          <p class="text-slate-400 max-w-2xl mx-auto">
+            Cero presupuestos opacos. Elige lo que necesitas hoy y escala
+            mañana.
+          </p>
         </div>
-        
-        <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-center relative">
-          
+
+        <div
+          class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-center relative"
+        >
           <!-- Plan 1 -->
-          <div class="bg-slate-800/60 border border-slate-700 rounded-3xl p-8 backdrop-blur-sm">
+          <div
+            class="bg-slate-800/60 border border-slate-700 rounded-3xl p-8 backdrop-blur-sm"
+          >
             <h3 class="text-2xl font-bold mb-2">Landing Esencial</h3>
-            <p class="text-slate-400 text-sm mb-6 h-10">La puerta de entrada: rápida, funcional y directa al grano.</p>
+            <p class="text-slate-400 text-sm mb-6 h-10">
+              La puerta de entrada: rápida, funcional y directa al grano.
+            </p>
             <div class="mb-8">
               <span class="text-sm font-semibold text-slate-400">Desde</span>
               <div class="flex items-baseline gap-2">
                 <span class="text-4xl font-black">350€</span>
               </div>
             </div>
-            
+
             <ul class="space-y-4 mb-8 text-slate-300">
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>**1 Landing Page** completa</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>Adaptada a móviles al 100%</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>Botón de WhatsApp y Formulario</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>Copy básico guiado</span>
               </li>
               <li class="flex items-start gap-3 font-semibold text-white">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg
+                >
                 <span>Entrega express (3-5 días)</span>
               </li>
             </ul>
-            
-            <button class="w-full py-4 rounded-xl font-bold bg-slate-700 hover:bg-slate-600 text-white transition-colors">
+
+            <a
+              href="#contacto"
+              class="inline-block w-full py-4 rounded-xl font-bold bg-slate-700 hover:bg-slate-600 text-white transition-colors text-center"
+            >
               Solicitar Plan Esencial
-            </button>
+            </a>
           </div>
 
           <!-- Plan 2 (Highlighted) -->
-          <div class="bg-linear-to-b from-slate-800 to-slate-900 border-2 border-lime-400 rounded-3xl p-8 shadow-[0_0_50px_-12px_rgba(163,230,53,0.25)] relative transform lg:-translate-y-4 z-10 hidden lg:block">
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-lime-400 text-slate-900 font-bold text-sm rounded-full tracking-wide shadow-lg">
+          <div
+            class="bg-linear-to-b from-slate-800 to-slate-900 border-2 border-brand rounded-3xl p-8 shadow-[0_0_50px_-12px_rgba(217,255,0,0.25)] relative transform lg:-translate-y-4 z-10 hidden lg:block"
+          >
+            <div
+              class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-brand text-slate-900 font-bold text-sm rounded-full tracking-wide shadow-lg"
+            >
               🔥 EL PAQUETE ESTRELLA
             </div>
             <h3 class="text-2xl font-bold mb-2">Web Profesional</h3>
-            <p class="text-lime-300 text-sm mb-6 h-10">Multiplica tu credibilidad web y transmite autoridad real.</p>
+            <p class="text-brand/90 text-sm mb-6 h-10">
+              Multiplica tu credibilidad web y transmite autoridad real.
+            </p>
             <div class="mb-8">
               <span class="text-sm font-semibold text-slate-400">Desde</span>
               <div class="flex items-baseline gap-2">
                 <span class="text-5xl font-black">800€</span>
               </div>
             </div>
-            
+
             <ul class="space-y-4 mb-8 text-slate-200">
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span><strong class="text-white">Hasta 5 Páginas</strong> (Inicio, Contacto...)</span>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
+                <span
+                  ><strong class="text-white">Hasta 5 Páginas</strong> (Inicio, Contacto...)</span
+                >
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span><strong>Diseño 100% Personalizado</strong></span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>Copy optimizado para conversión</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>Super Optimización de velocidad extrema</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>SEO Básico implementado</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>Integraciones (Calendario, WhatsApp)</span>
               </li>
             </ul>
-            
-            <button class="w-full py-4 rounded-xl font-bold bg-lime-400 hover:bg-lime-500 text-slate-900 transition-all hover:scale-105 active:scale-95 shadow-lg">
+
+            <a
+              href="#contacto"
+              class="inline-block w-full py-4 rounded-xl font-bold bg-brand hover:bg-brand/90 text-slate-900 transition-all hover:scale-105 active:scale-95 shadow-lg text-center"
+            >
               Quiero esta opción
-            </button>
+            </a>
           </div>
-          
-           <!-- Mobile representation of highlighted plan -->
-           <div class="bg-linear-to-b from-slate-800 to-slate-900 border-2 border-lime-400 rounded-3xl p-8 shadow-[0_0_50px_-12px_rgba(163,230,53,0.25)] relative z-10 lg:hidden">
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-lime-400 text-slate-900 font-bold text-sm rounded-full tracking-wide shadow-lg">
+
+          <!-- Mobile representation of highlighted plan -->
+          <div
+            class="bg-linear-to-b from-slate-800 to-slate-900 border-2 border-brand rounded-3xl p-8 shadow-[0_0_50px_-12px_rgba(217,255,0,0.25)] relative z-10 lg:hidden"
+          >
+            <div
+              class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-brand text-slate-900 font-bold text-sm rounded-full tracking-wide shadow-lg"
+            >
               🔥 MÁS ELEGIDO
             </div>
             <h3 class="text-2xl font-bold mb-2">Web Profesional</h3>
-            <p class="text-lime-300 text-sm mb-6">Multiplica tu credibilidad web y transmite autoridad real.</p>
+            <p class="text-brand/90 text-sm mb-6">
+              Multiplica tu credibilidad web y transmite autoridad real.
+            </p>
             <div class="mb-8">
               <span class="text-sm font-semibold text-slate-400">Desde</span>
               <div class="flex items-baseline gap-2">
                 <span class="text-5xl font-black">800€</span>
               </div>
             </div>
-            
+
             <ul class="space-y-4 mb-8 text-slate-200">
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span><strong class="text-white">Hasta 5 Páginas</strong> (Inicio, Contacto...)</span>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
+                <span
+                  ><strong class="text-white">Hasta 5 Páginas</strong> (Inicio, Contacto...)</span
+                >
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span><strong>Diseño 100% Personalizado</strong></span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>Copy optimizado para conversión</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>Super Optimización de velocidad extrema</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>SEO Básico implementado</span>
               </li>
             </ul>
-            
-            <button class="w-full py-4 rounded-xl font-bold bg-lime-400 hover:bg-lime-500 text-slate-900 transition-all hover:scale-105 active:scale-95 shadow-lg">
+
+            <a
+              href="#contacto"
+              class="inline-block w-full py-4 rounded-xl font-bold bg-brand hover:bg-brand/90 text-slate-900 transition-all hover:scale-105 active:scale-95 shadow-lg text-center"
+            >
               Quiero esta opción
-            </button>
+            </a>
           </div>
 
           <!-- Plan 3 -->
-          <div class="bg-slate-800/60 border border-slate-700/80 rounded-3xl p-8 backdrop-blur-sm">
+          <div
+            class="bg-slate-800/60 border border-slate-700/80 rounded-3xl p-8 backdrop-blur-sm"
+          >
             <h3 class="text-2xl font-bold mb-2">Web Premium / Ventas</h3>
-            <p class="text-slate-400 text-sm mb-6 h-10">No es una web, es una máquina estructurada para captar leads.</p>
+            <p class="text-slate-400 text-sm mb-6 h-10">
+              No es una web, es una máquina estructurada para captar leads.
+            </p>
             <div class="mb-8">
               <span class="text-sm font-semibold text-slate-400">Desde</span>
               <div class="flex items-baseline gap-2">
                 <span class="text-4xl font-black">1.800€</span>
               </div>
             </div>
-            
+
             <ul class="space-y-4 mb-8 text-slate-300">
               <li class="flex items-start gap-3 text-white font-medium">
-                <svg class="w-5 h-5 text-lime-400 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <svg
+                  class="w-5 h-5 text-brand mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path></svg
+                >
                 <span>Todo lo incluido en la Profesional</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-slate-500 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                <svg
+                  class="w-5 h-5 text-slate-500 mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"></path></svg
+                >
                 <span>Estrategia de conversión avanzada</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-slate-500 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                <svg
+                  class="w-5 h-5 text-slate-500 mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"></path></svg
+                >
                 <span>Copywriting persuasivo 100% hecho a mano</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-slate-500 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                <svg
+                  class="w-5 h-5 text-slate-500 mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"></path></svg
+                >
                 <span>Funnels y estructuras de captación (Embudos)</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-slate-500 mt-1 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                <svg
+                  class="w-5 h-5 text-slate-500 mt-1 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"></path></svg
+                >
                 <span>Integración con Email Marketing o CRMs</span>
               </li>
             </ul>
-            
-            <button class="w-full py-4 rounded-xl font-bold bg-slate-700 hover:bg-slate-600 text-white transition-colors">
+
+            <a
+              href="#contacto"
+              class="inline-block w-full py-4 rounded-xl font-bold bg-slate-700 hover:bg-slate-600 text-white transition-colors text-center"
+            >
               Hablar del Proyecto
-            </button>
+            </a>
           </div>
-          
         </div>
       </div>
     </section>
@@ -491,40 +1135,116 @@ import Layout from '../layouts/Layout.astro';
     <!-- Prueba Social -->
     <section class="py-24 bg-slate-800">
       <div class="container mx-auto px-6 lg:px-8 max-w-5xl text-center">
-        <h2 class="text-3xl font-bold mb-16">Lo que consiguen empresas como la tuya</h2>
-        
+        <h2 class="text-3xl font-bold mb-16">
+          Lo que consiguen empresas como la tuya
+        </h2>
+
         <div class="grid md:grid-cols-2 gap-8 text-left">
-          <div class="bg-slate-900 border border-slate-700 p-8 rounded-2xl relative">
-            <svg class="absolute top-6 right-6 w-10 h-10 text-slate-700 opacity-50" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          <div
+            class="bg-slate-900 border border-slate-700 p-8 rounded-2xl relative"
+          >
+            <svg
+              class="absolute top-6 right-6 w-10 h-10 text-slate-700 opacity-50"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+              ></path></svg
+            >
             <div class="flex text-yellow-400 mb-6 gap-1">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
             </div>
-            <p class="text-slate-300 text-lg mb-6 leading-relaxed">"Necesitábamos renovar la web de nuestra gestoría urgente. En menos de una semana nos hicieron un diseño increíble y nos olvidamos del lío del hosting y el diseño."</p>
+            <p class="text-slate-300 text-lg mb-6 leading-relaxed">
+              "Necesitábamos renovar la web de nuestra gestoría urgente. En
+              menos de una semana nos hicieron un diseño increíble y nos
+              olvidamos del lío del hosting y el diseño."
+            </p>
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center font-bold">L</div>
+              <div
+                class="w-12 h-12 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center font-bold"
+              >
+                L
+              </div>
               <div>
                 <p class="font-bold text-white">Laura G.</p>
                 <p class="text-sm text-slate-500">Gestoría Financiera Local</p>
               </div>
             </div>
           </div>
-          
-          <div class="bg-slate-900 border border-slate-700 p-8 rounded-2xl relative">
-            <svg class="absolute top-6 right-6 w-10 h-10 text-slate-700 opacity-50" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+
+          <div
+            class="bg-slate-900 border border-slate-700 p-8 rounded-2xl relative"
+          >
+            <svg
+              class="absolute top-6 right-6 w-10 h-10 text-slate-700 opacity-50"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+              ></path></svg
+            >
             <div class="flex text-yellow-400 mb-6 gap-1">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                ><path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                ></path></svg
+              >
             </div>
-            <p class="text-slate-300 text-lg mb-6 leading-relaxed">"Antes la gente entraba a nuestra web y nadie contactaba. Cambiamos al Paquete Profesional y ahora nos entran presupuestos de forma recurrente semanalmente."</p>
+            <p class="text-slate-300 text-lg mb-6 leading-relaxed">
+              "Antes la gente entraba a nuestra web y nadie contactaba.
+              Cambiamos al Paquete Profesional y ahora nos entran presupuestos
+              de forma recurrente semanalmente."
+            </p>
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center font-bold">C</div>
+              <div
+                class="w-12 h-12 rounded-full bg-slate-800 border-2 border-slate-700 flex items-center justify-center font-bold"
+              >
+                C
+              </div>
               <div>
                 <p class="font-bold text-white">Carlos M.</p>
                 <p class="text-sm text-slate-500">Clínica Clínica Dental</p>
@@ -539,34 +1259,95 @@ import Layout from '../layouts/Layout.astro';
     <section id="contacto" class="py-24 bg-slate-900 border-t border-slate-800">
       <div class="container mx-auto px-6 lg:px-8 max-w-3xl">
         <div class="text-center mb-12" data-reveal>
-          <h2 class="text-3xl lg:text-4xl font-bold mb-4">Hablemos de tu proyecto</h2>
-          <p class="text-slate-400 max-w-xl mx-auto">Rellena el formulario y nos ponderemos en contacto contigo lo antes posible para preparar una propuesta 100% personalizada.</p>
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4">
+            Hablemos de tu proyecto
+          </h2>
+          <p class="text-slate-400 max-w-xl mx-auto">
+            Rellena el formulario y nos ponderemos en contacto contigo lo antes
+            posible para preparar una propuesta 100% personalizada.
+          </p>
         </div>
-        
-        <form action="https://api.web3forms.com/submit" method="POST" class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl shadow-xl" data-reveal>
+
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl shadow-xl"
+          data-reveal
+          data-captcha="true"
+        >
           <!-- Reemplaza con tu Access Key de Web3Forms -->
-          <input type="hidden" name="access_key" value="31fa74de-df80-4e02-add2-6096f0a58983">
-          
+          <input
+            type="hidden"
+            name="access_key"
+            value="31fa74de-df80-4e02-add2-6096f0a58983"
+          />
+
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
-              <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Tu Nombre</label>
-              <input type="text" name="name" id="name" required class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-lime-400 focus:ring-1 focus:ring-lime-400 text-white placeholder-slate-500" placeholder="Ej. Carlos Martínez">
+              <label
+                for="name"
+                class="block text-sm font-medium text-slate-300 mb-2"
+                >Tu Nombre</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand text-white placeholder-slate-500"
+                placeholder="Ej. Carlos Martínez"
+              />
             </div>
             <div>
-              <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Correo Electrónico</label>
-              <input type="email" name="email" id="email" required class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-lime-400 focus:ring-1 focus:ring-lime-400 text-white placeholder-slate-500" placeholder="correo@empresa.com">
+              <label
+                for="email"
+                class="block text-sm font-medium text-slate-300 mb-2"
+                >Correo Electrónico</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand text-white placeholder-slate-500"
+                placeholder="correo@empresa.com"
+              />
             </div>
           </div>
-          
-          <div class="mb-6">
-            <label for="message" class="block text-sm font-medium text-slate-300 mb-2">¿Qué necesitas?</label>
-            <textarea name="message" id="message" rows="4" required class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-lime-400 focus:ring-1 focus:ring-lime-400 text-white placeholder-slate-500" placeholder="Cuéntanos un poco sobre tu negocio y qué te gustaría conseguir con la web..."></textarea>
-          </div>
-          
-          <!-- Anti-spam bot honeypot -->
-          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-          <button type="submit" class="w-full py-4 bg-lime-400 hover:bg-lime-500 text-slate-900 font-bold rounded-xl transition-colors text-lg">
+          <div class="mb-6">
+            <label
+              for="message"
+              class="block text-sm font-medium text-slate-300 mb-2"
+              >¿Qué necesitas?</label
+            >
+            <textarea
+              name="message"
+              id="message"
+              rows="4"
+              required
+              class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand text-white placeholder-slate-500"
+              placeholder="Cuéntanos un poco sobre tu negocio y qué te gustaría conseguir con la web..."
+            ></textarea>
+          </div>
+
+          <!-- Anti-spam bot honeypot -->
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none;"
+          />
+
+          <!-- hCaptcha Widget -->
+          <div class="mb-6 flex justify-center min-h-[80px]">
+            <div class="h-captcha" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full py-4 bg-brand hover:bg-brand/90 text-slate-900 font-bold rounded-xl transition-colors text-lg"
+          >
             Enviar Mensaje
           </button>
         </form>
@@ -574,14 +1355,25 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- CTA Final -->
-    <section class="py-32 bg-lime-400 relative overflow-hidden" data-reveal>
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent"></div>
-      <div class="container mx-auto px-6 lg:px-8 text-center max-w-4xl relative z-10">
-        <h2 class="text-4xl lg:text-6xl font-black text-slate-900 mb-8">¿Listo para tener una web que realmente te traiga clientes?</h2>
+    <section class="py-32 bg-brand relative overflow-hidden" data-reveal>
+      <div
+        class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent"
+      >
+      </div>
+      <div
+        class="container mx-auto px-6 lg:px-8 text-center max-w-4xl relative z-10"
+      >
+        <h2 class="text-4xl lg:text-6xl font-black text-slate-900 mb-8">
+          ¿Listo para tener una web que realmente te traiga clientes?
+        </h2>
         <p class="text-xl text-slate-800 mb-12 font-medium max-w-2xl mx-auto">
-          Tu competencia ya está consiguiendo clientes por internet. Deja la tecnología de nuestro lado e impulsa tu negocio local.
+          Tu competencia ya está consiguiendo clientes por internet. Deja la
+          tecnología de nuestro lado e impulsa tu negocio local.
         </p>
-        <a href="#contacto" class="inline-block px-10 py-5 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-lg transition-all hover:scale-105 active:scale-95 shadow-2xl">
+        <a
+          href="#contacto"
+          class="inline-block px-10 py-5 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl text-lg transition-all hover:scale-105 active:scale-95 shadow-2xl"
+        >
           👉 Solicitar Propuesta Gratuita
         </a>
       </div>
@@ -590,15 +1382,35 @@ import Layout from '../layouts/Layout.astro';
     <!-- Cross-Selling / Gancho Tane Solutions -->
     <section class="py-20 bg-slate-950 border-t border-slate-900" data-reveal>
       <div class="container mx-auto px-6 lg:px-8 text-center max-w-3xl">
-        <h2 class="text-2xl lg:text-3xl font-bold mb-4">¿Tienes algo distinto en mente?</h2>
-        <p class="text-slate-400 mb-8 text-lg">Además de diseño web de alta conversión, ofrecemos <span class="text-lime-400">Auditorías SEO, Diseño de Cartas y Menús, Gestión de Redes Sociales</span> y estrategias integrales. Escala tu marca con un solo equipo.</p>
-        <a href="https://tanesolutions.com" target="_blank" class="group inline-flex items-center gap-2 px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl transition-all border border-slate-700 hover:border-slate-500 shadow-lg">
+        <h2 class="text-2xl lg:text-3xl font-bold mb-4">
+          ¿Tienes algo distinto en mente?
+        </h2>
+        <p class="text-slate-400 mb-8 text-lg">
+          Además de diseño web de alta conversión, ofrecemos <span
+            class="text-brand"
+            >Auditorías SEO, Diseño de Cartas y Menús, Gestión de Redes Sociales</span
+          > y estrategias integrales. Escala tu marca con un solo equipo.
+        </p>
+        <a
+          href="https://tanesolutions.com"
+          target="_blank"
+          class="group inline-flex items-center gap-2 px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl transition-all border border-slate-700 hover:border-slate-500 shadow-lg"
+        >
           Ver todos los servicios de Tane Solution
-          <svg class="w-5 h-5 transition-transform group-hover:translate-x-1 text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          <svg
+            class="w-5 h-5 transition-transform group-hover:translate-x-1 text-brand"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg
+          >
         </a>
       </div>
     </section>
-
   </main>
 </Layout>
 
@@ -608,7 +1420,7 @@ import Layout from '../layouts/Layout.astro';
     transform: translateY(30px);
     transition: all 0.8s ease-out;
   }
-  
+
   [data-reveal].is-visible {
     opacity: 1;
     transform: translateY(0);
@@ -620,24 +1432,24 @@ import Layout from '../layouts/Layout.astro';
   const setupAnimations = () => {
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.15
+      rootMargin: "0px",
+      threshold: 0.15,
     };
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
+          entry.target.classList.add("is-visible");
           observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    const revealElements = document.querySelectorAll('[data-reveal]');
-    revealElements.forEach(el => observer.observe(el));
+    const revealElements = document.querySelectorAll("[data-reveal]");
+    revealElements.forEach((el) => observer.observe(el));
   };
 
   // Run on first load and view transitions
   setupAnimations();
-  document.addEventListener('astro:page-load', setupAnimations);
+  document.addEventListener("astro:page-load", setupAnimations);
 </script>
