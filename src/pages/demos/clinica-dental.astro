@@ -2,15 +2,15 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Demo: Clínica Dental Premium | Tane Solutions" description="Ejemplo de Landing Page para Clínicas Dentales orientada a conversión.">
+<Layout title="Demo: Clínica Dental Premium | Tane Solutions" description="Ejemplo de Landing Page para Clínicas Dentales orientada a conversión." hideHeader={true}>
   
   <!-- Navigation / Back to Main -->
-  <div class="fixed top-0 inset-x-0 z-50 p-4 flex justify-between items-center pointer-events-none">
+  <div class="fixed top-0 inset-x-0 z-50 p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 pointer-events-none">
     <a href="/" class="pointer-events-auto inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-white/20 transition-all shadow-lg">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
       Volver a Tane
     </a>
-    <div class="pointer-events-auto px-4 py-1.5 bg-blue-500 text-white shadow-lg shadow-blue-500/20 rounded-full text-xs font-bold tracking-widest uppercase">
+    <div class="pointer-events-auto px-4 py-1.5 bg-blue-500 text-white shadow-lg shadow-blue-500/20 rounded-full text-[10px] sm:text-xs font-bold tracking-widest uppercase text-center">
       Entorno Demo Clínico
     </div>
   </div>
@@ -25,7 +25,7 @@ import Layout from '../../layouts/Layout.astro';
           Financiación a medida disponible
         </div>
         
-        <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.05]">
+        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.05]">
           Tu sonrisa es la <span class="text-blue-600">mejor carta de presentación.</span>
         </h1>
         
@@ -60,24 +60,24 @@ import Layout from '../../layouts/Layout.astro';
           <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1000&auto=format&fit=crop" alt="Clínica Dental Moderna" class="relative z-10 w-full h-full object-cover rounded-[3rem] shadow-2xl border-8 border-white" />
           
           <!-- Floating UI Element Left -->
-          <div class="absolute -left-12 top-20 bg-white p-4 rounded-2xl shadow-xl z-20 flex items-center gap-4 animate-bounce" style="animation-duration: 3s">
-            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+          <div class="absolute -left-4 sm:-left-12 top-20 bg-white p-3 sm:p-4 rounded-2xl shadow-xl z-20 flex items-center gap-4 animate-bounce" style="animation-duration: 3s">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sm:w-6 sm:h-6"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
             </div>
             <div>
-              <p class="font-bold text-slate-900 leading-tight">Clínica</p>
-              <p class="text-slate-500 text-sm">Certificada</p>
+              <p class="font-bold text-slate-900 text-xs sm:text-base leading-tight">Clínica</p>
+              <p class="text-slate-500 text-[10px] sm:text-sm">Certificada</p>
             </div>
           </div>
           
           <!-- Floating UI Element Right -->
-          <div class="absolute -right-8 bottom-20 bg-white p-4 rounded-2xl shadow-xl z-20 flex items-center gap-3">
+          <div class="absolute -right-4 sm:-right-8 bottom-20 bg-white p-3 sm:p-4 rounded-2xl shadow-xl z-20 flex items-center gap-3">
              <div class="flex -space-x-3">
-               <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=1" alt="Doc">
-               <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=2" alt="Doc">
-               <img class="w-10 h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=3" alt="Doc">
+               <img class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=1" alt="Doc">
+               <img class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=2" alt="Doc">
+               <img class="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=3" alt="Doc">
              </div>
-             <div class="text-sm">
+             <div class="text-[10px] sm:text-sm">
                 <p class="font-bold text-slate-900">+5 Especialistas</p>
              </div>
           </div>
