@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Demo: Clínica Dental Premium | Tane Solutions" description="Ejemplo de Landing Page para Clínicas Dentales orientada a conversión.">
+  
+  <!-- Navigation / Back to Main -->
+  <div class="fixed top-0 inset-x-0 z-50 p-4 flex justify-between items-center pointer-events-none">
+    <a href="/" class="pointer-events-auto inline-flex items-center gap-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors shadow-lg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      Volver a Tane
+    </a>
+    <div class="pointer-events-auto px-3 py-1 bg-lime-500/10 border border-lime-500/20 text-lime-400 rounded-full text-xs font-bold tracking-widest uppercase">
+      Entorno Demo
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <main class="min-h-screen bg-slate-950 text-slate-200">
+    <!-- Dental Themed Background Gradient -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-blue-500/10 blur-[120px] rounded-full"></div>
+      <div class="absolute top-[30%] -right-[10%] w-[40%] h-[40%] bg-cyan-500/10 blur-[120px] rounded-full"></div>
+    </div>
+
+    <!-- Content -->
+    <section class="relative pt-32 pb-20 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 min-h-[90vh]">
+      
+      <!-- Text Area -->
+      <div class="flex-1 relative z-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
+          <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+          Especialidades Odontológicas
+        </div>
+        
+        <h1 class="text-5xl lg:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
+          Sonrisas perfectas, <br />
+          <span class="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">resultados reales.</span>
+        </h1>
+        
+        <p class="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed">
+          Diseñamos planes de tratamiento personalizados con la última tecnología en salud dental. Recupera tu confianza en menos de 3 visitas.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2">
+            Agendar Primera Cita
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+          <button class="bg-slate-800 hover:bg-slate-700 text-white font-medium px-8 py-4 rounded-xl border border-slate-700 transition-all flex items-center justify-center">
+            Ver Tratamientos
+          </button>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="mt-12 flex items-center gap-6 text-sm text-slate-500 border-t border-slate-800 pt-8">
+          <div class="flex items-center gap-2">
+            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>+2,500 Pacientes Felices</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="text-blue-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Clínica Certificada</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image / Graphic Area -->
+      <div class="flex-1 w-full max-w-lg lg:max-w-none relative z-10">
+        <div class="relative rounded-2xl overflow-hidden aspect-4/5 sm:aspect-square bg-slate-800 border border-slate-700 shadow-2xl">
+          <!-- Placeholder para imagen de dentista clínica elegante -->
+          <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2000&auto=format&fit=crop" alt="Clínica Dental Moderna" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-overlay" />
+          
+          <div class="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-900/20 to-transparent"></div>
+          
+          <!-- Floating UI Element -->
+          <div class="absolute bottom-6 left-6 right-6 bg-slate-900/80 backdrop-blur-md border border-slate-700 p-4 rounded-xl flex items-center gap-4">
+            <div class="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-white text-lg">Tratamientos a medida</p>
+              <p class="text-slate-400 text-sm">Escáner 3D en tu primera visita.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

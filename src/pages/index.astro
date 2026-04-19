@@ -184,60 +184,72 @@ import Layout from '../layouts/Layout.astro';
         
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Demo 1 -->
-          <div class="group cursor-pointer">
-            <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg">
+          <a href="/demos/clinica-dental" class="group cursor-pointer block">
+            <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50">
               <div class="absolute inset-0 bg-slate-700 m-2 rounded-xl flex flex-col overflow-hidden transition-transform duration-500 group-hover:scale-105">
                 <div class="h-4 bg-slate-800 w-full flex items-center px-2">
                    <div class="flex gap-1"><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div></div>
                 </div>
-                <div class="p-4 bg-linear-to-b from-blue-900/50 to-slate-800 flex-1">
+                <div class="p-4 bg-linear-to-b from-blue-900/50 to-slate-800 flex-1 relative">
                    <div class="w-1/2 h-4 bg-blue-400/20 rounded mb-2"></div>
                    <div class="w-3/4 h-6 bg-white/10 rounded mb-6"></div>
                    <div class="w-20 h-6 bg-blue-500/80 rounded-full"></div>
+                   <!-- Overlay Hover CTA -->
+                   <div class="absolute inset-0 bg-slate-900/80 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity flex">
+                     <span class="bg-lime-400 text-slate-900 font-bold px-4 py-2 rounded-full text-sm flex items-center gap-2">Ver Demo Real <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span>
+                   </div>
                 </div>
               </div>
             </div>
-            <h3 class="text-lg font-bold">Clínica Dental / Salud</h3>
+            <h3 class="text-lg font-bold group-hover:text-lime-400 transition-colors">Clínica Dental / Salud</h3>
             <p class="text-sm text-slate-400">Diseño enfocado en confianza y reservas de citas rápidas.</p>
-          </div>
+          </a>
           
           <!-- Demo 2 -->
-          <div class="group cursor-pointer">
-            <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg">
+          <a href="/demos/gestoria-legal" class="group cursor-pointer block">
+            <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50">
               <div class="absolute inset-0 bg-slate-700 m-2 rounded-xl flex flex-col overflow-hidden transition-transform duration-500 group-hover:scale-105">
                 <div class="h-4 bg-slate-800 w-full flex items-center px-2">
                    <div class="flex gap-1"><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div></div>
                 </div>
-                <div class="p-4 bg-linear-to-b from-stone-800 to-slate-800 flex-1 flex flex-col items-center text-center">
+                <div class="p-4 bg-linear-to-b from-stone-800 to-slate-800 flex-1 flex flex-col items-center text-center relative">
                    <div class="w-12 h-12 rounded-full bg-stone-600/50 mb-3"></div>
                    <div class="w-3/4 h-5 bg-white/10 rounded mb-2"></div>
                    <div class="w-1/2 h-3 bg-white/5 rounded"></div>
+                   <!-- Overlay Hover CTA -->
+                   <div class="absolute inset-0 bg-slate-900/80 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity flex">
+                     <span class="bg-lime-400 text-slate-900 font-bold px-4 py-2 rounded-full text-sm flex items-center gap-2">Ver Demo Real <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span>
+                   </div>
                 </div>
               </div>
             </div>
-            <h3 class="text-lg font-bold">Abogados y Gestoría</h3>
+            <h3 class="text-lg font-bold group-hover:text-lime-400 transition-colors">Abogados y Gestoría</h3>
             <p class="text-sm text-slate-400">Estructura seria, profesional con captación de Leads.</p>
-          </div>
+          </a>
           
           <!-- Demo 3 -->
-          <div class="group cursor-pointer">
-            <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg">
+          <a href="/demos/reformas" class="group cursor-pointer block">
+            <div class="relative w-full aspect-4/3 bg-slate-800 rounded-2xl overflow-hidden mb-4 border border-slate-700 shadow-lg transition-transform duration-300 group-hover:-translate-y-2 group-hover:border-lime-500/50">
               <div class="absolute inset-0 bg-slate-700 m-2 rounded-xl flex flex-col overflow-hidden transition-transform duration-500 group-hover:scale-105">
                 <div class="h-4 bg-slate-800 w-full flex items-center px-2">
                    <div class="flex gap-1"><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div><div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div></div>
                 </div>
-                <div class="p-4 bg-linear-to-br from-amber-900/40 to-slate-800 flex-1 flex gap-2">
+                <div class="p-4 bg-linear-to-br from-amber-900/40 to-slate-800 flex-1 flex gap-2 relative">
                    <div class="w-1/2 bg-amber-500/10 rounded-lg"></div>
                    <div class="w-1/2 flex flex-col gap-2">
                      <div class="h-10 bg-white/10 rounded-lg"></div>
                      <div class="flex-1 bg-white/5 rounded-lg"></div>
                    </div>
+                   <!-- Overlay Hover CTA -->
+                   <div class="absolute inset-0 bg-slate-900/80 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity flex">
+                     <span class="bg-lime-400 text-slate-900 font-bold px-4 py-2 rounded-full text-sm flex items-center gap-2">Ver Demo Real <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span>
+                   </div>
                 </div>
               </div>
             </div>
-            <h3 class="text-lg font-bold">Reformas Externas</h3>
+            <h3 class="text-lg font-bold group-hover:text-lime-400 transition-colors">Reformas Externas</h3>
             <p class="text-sm text-slate-400">Visuales potentes de antes y después con presupuesto ágil.</p>
-          </div>
+          </a>
         </div>
         
         <div class="mt-12 text-center">
