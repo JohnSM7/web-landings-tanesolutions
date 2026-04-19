@@ -1269,6 +1269,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <form
+          id="contact-form"
           action="https://api.web3forms.com/submit"
           method="POST"
           class="bg-slate-800/50 border border-slate-700 p-8 rounded-2xl shadow-xl"
@@ -1346,10 +1347,16 @@ import Layout from "../layouts/Layout.astro";
 
           <button
             type="submit"
-            class="w-full py-4 bg-brand hover:bg-brand/90 text-slate-900 font-bold rounded-xl transition-colors text-lg"
+            id="submit-btn"
+            class="w-full py-4 bg-brand hover:bg-brand/90 text-slate-900 font-bold rounded-xl transition-all text-lg flex items-center justify-center gap-2 group"
           >
-            Enviar Mensaje
+            <span>Enviar Mensaje</span>
+            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
           </button>
+
+          <div id="result" class="mt-4 text-center hidden"></div>
         </form>
       </div>
     </section>
@@ -1452,4 +1459,72 @@ import Layout from "../layouts/Layout.astro";
   // Run on first load and view transitions
   setupAnimations();
   document.addEventListener("astro:page-load", setupAnimations);
+
+  // Form Submission handling
+  const contactForm = document.getElementById("contact-form") as HTMLFormElement;
+  const result = document.getElementById("result");
+  const submitBtn = document.getElementById("submit-btn") as HTMLButtonElement;
+
+  if (contactForm && result && submitBtn) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      
+      // Verify hCaptcha
+      const hcaptcha = (contactForm.querySelector('[name="h-captcha-response"]') as HTMLInputElement)?.value;
+      if (!hcaptcha) {
+          result.innerHTML = "Por favor, completa el hCaptcha.";
+          result.classList.remove("hidden", "text-brand");
+          result.classList.add("text-red-400");
+          return;
+      }
+
+      const formData = new FormData(contactForm);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      result.innerHTML = "Enviando...";
+      result.classList.remove("hidden", "text-red-400", "text-brand");
+      result.classList.add("text-slate-400");
+      submitBtn.disabled = true;
+      submitBtn.classList.add("opacity-50", "cursor-not-allowed");
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      })
+        .then(async (response) => {
+          let json = await response.json();
+          if (response.status == 200) {
+            result.innerHTML = "¡Tu mensaje se ha enviado correctamente!";
+            result.classList.remove("text-slate-400", "text-red-400");
+            result.classList.add("text-brand", "font-bold");
+            contactForm.reset();
+            // @ts-ignore
+            if (typeof hcaptcha !== 'undefined') window.hcaptcha.reset();
+          } else {
+            console.log(response);
+            result.innerHTML = json.message || "Algo salió mal. Por favor, inténtalo de nuevo.";
+            result.classList.remove("text-slate-400", "text-brand");
+            result.classList.add("text-red-400");
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          result.innerHTML = "Error de conexión. Inténtalo más tarde.";
+          result.classList.remove("text-slate-400", "text-brand");
+          result.classList.add("text-red-400");
+        })
+        .then(function () {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove("opacity-50", "cursor-not-allowed");
+          setTimeout(() => {
+            // result.classList.add("hidden");
+          }, 5000);
+        });
+    });
+  }
 </script>
