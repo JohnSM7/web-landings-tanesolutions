@@ -1342,7 +1342,11 @@ import Layout from "../layouts/Layout.astro";
 
           <!-- hCaptcha Widget -->
           <div class="mb-6 flex justify-center min-h-[80px]">
-            <div class="h-captcha" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
+            <div
+              class="h-captcha"
+              data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+            >
+            </div>
           </div>
 
           <button
@@ -1351,8 +1355,17 @@ import Layout from "../layouts/Layout.astro";
             class="w-full py-4 bg-brand hover:bg-brand/90 text-slate-900 font-bold rounded-xl transition-all text-lg flex items-center justify-center gap-2 group"
           >
             <span>Enviar Mensaje</span>
-            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            <svg
+              class="w-5 h-5 transition-transform group-hover:translate-x-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>
           </button>
 
@@ -1399,7 +1412,7 @@ import Layout from "../layouts/Layout.astro";
           > y estrategias integrales. Escala tu marca con un solo equipo.
         </p>
         <a
-          href="https://tanesolutions.com"
+          href="https://tanesolutions.coms.com"
           target="_blank"
           class="group inline-flex items-center gap-2 px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl transition-all border border-slate-700 hover:border-slate-500 shadow-lg"
         >
@@ -1461,21 +1474,27 @@ import Layout from "../layouts/Layout.astro";
   document.addEventListener("astro:page-load", setupAnimations);
 
   // Form Submission handling
-  const contactForm = document.getElementById("contact-form") as HTMLFormElement;
+  const contactForm = document.getElementById(
+    "contact-form",
+  ) as HTMLFormElement;
   const result = document.getElementById("result");
   const submitBtn = document.getElementById("submit-btn") as HTMLButtonElement;
 
   if (contactForm && result && submitBtn) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      
+
       // Verify hCaptcha
-      const hcaptcha = (contactForm.querySelector('[name="h-captcha-response"]') as HTMLInputElement)?.value;
+      const hcaptcha = (
+        contactForm.querySelector(
+          '[name="h-captcha-response"]',
+        ) as HTMLInputElement
+      )?.value;
       if (!hcaptcha) {
-          result.innerHTML = "Por favor, completa el hCaptcha.";
-          result.classList.remove("hidden", "text-brand");
-          result.classList.add("text-red-400");
-          return;
+        result.innerHTML = "Por favor, completa el hCaptcha.";
+        result.classList.remove("hidden", "text-brand");
+        result.classList.add("text-red-400");
+        return;
       }
 
       const formData = new FormData(contactForm);
@@ -1504,10 +1523,11 @@ import Layout from "../layouts/Layout.astro";
             result.classList.add("text-brand", "font-bold");
             contactForm.reset();
             // @ts-ignore
-            if (typeof hcaptcha !== 'undefined') window.hcaptcha.reset();
+            if (typeof hcaptcha !== "undefined") window.hcaptcha.reset();
           } else {
             console.log(response);
-            result.innerHTML = json.message || "Algo salió mal. Por favor, inténtalo de nuevo.";
+            result.innerHTML =
+              json.message || "Algo salió mal. Por favor, inténtalo de nuevo.";
             result.classList.remove("text-slate-400", "text-brand");
             result.classList.add("text-red-400");
           }

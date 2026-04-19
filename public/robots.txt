@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tanesolution.com/sitemap-index.xml
+Sitemap: https://tanesolutions.com/sitemap-index.xml
